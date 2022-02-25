@@ -5,6 +5,7 @@ wordlist=[]
 with open('words.txt') as w:
   words = w.readlines()
 
+print('Recomennded word to begin with: [orate] - 1.79 correct letters in average')
 while letter!='':
   del wordlist[:]
   letter=input("What letter do you know? ")
@@ -23,4 +24,4 @@ while letter!='':
         if word[position]!=letter:
           wordlist.append(word)
   words=wordlist.copy()
-  print(*wordlist)
+  print(*wordlist, ' - Choose wisely, I am here to help you, not to solve the wordle instead of you -')
