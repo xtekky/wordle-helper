@@ -29,7 +29,7 @@ def helper():
     words=wordlist.copy()
     print(*wordlist, ' - Choose wisely, I am here to help you, not to solve the wordle instead of you -')
   
-  start = input('Type 1 if you want to start!')
+  start = str(input('Type 1 if you want to start!'))
   if start == 1:
     print('Starting Helper...')
     sl(0.7)
